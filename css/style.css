@@ -15,7 +15,7 @@ header{
   display: flex;
   height: 6%;
   width: 100%;
-  background: gray;
+  background: white;
   justify-content: space-between;
   align-items: center;
 }
@@ -28,7 +28,7 @@ header .title {
 
 header .menu {
   display: flex;
-  width: 50%;
+  width: 52%;
   justify-content: start;
   align-items: center;
   gap: 10px;
@@ -45,6 +45,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #e1e1e1;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  height: 45%;
+  width: 17%;
+  background-color: white;
+  justify-content: space-around;
+  border-radius: 0.25rem;
 }
 
 .sectionProducts {
@@ -53,15 +64,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 0px 63px;
-}
-
-main .container {
-  display: flex;
-  flex-direction: column;
-  height: 45%;
-  width: 17%;
-  background-color: aqua;
-  justify-content: space-around;
 }
 
 .containerImage{
@@ -78,6 +80,8 @@ main .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 78%);
+  border-radius: 0.3125rem;
 }
 
 .image img {
@@ -88,26 +92,29 @@ main .container {
 
 .containerDescribeAndPrice {
   display: flex;
-  justify-content: flex-end;
-  width: 40%;
-  height: 15%;
+  width: 286px;
+  height: 34%;
+  align-items: center;
+  justify-content: center;
 }
 
 .describeAndPrice {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  width: 198px;
+  gap: 15px;
 }
 
 .txtDiscribe {
-  height: 47%;
+  height: 100%;
+  width: 100%;
 }
 
 footer{
   display: flex;
   height: 6%;
   width: 100%;
-  background: gray;
+  background: white;
   justify-content: center;
   align-items: center;
 }
