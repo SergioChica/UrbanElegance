@@ -11,24 +11,25 @@ body {
   height: 100vh;
 }
 
-header{
+header {
   display: flex;
   height: 6%;
   width: 100%;
   background: white;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 header .title {
-  width: 10%;
+  width: 23%;
   display: flex;
   flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 header .menu {
   display: flex;
-  width: 52%;
+  width: 40%;
   justify-content: start;
   align-items: center;
   gap: 10px;
@@ -41,42 +42,43 @@ header .menu {
 
 main {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
   background: #e1e1e1;
 }
 
-main .container {
-  display: flex;
-  flex-direction: column;
-  height: 45%;
-  width: 17%;
-  background-color: white;
-  justify-content: space-around;
-  border-radius: 0.25rem;
-}
 
 .sectionProducts {
   height: 90%;
-  width: 89%;
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
-  gap: 0px 63px;
+  gap: 20px 4%;
+  padding: 25px 0 25px 0;
 }
 
-.containerImage{
-  height: 50%;
+.sectionProducts .container {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  background-color: white;
+  border-radius: 0.25rem;
+  gap: 20px;
+}
+
+.containerImage {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 12px 0 0px 0px;
 }
 
 .image {
-  height: 95%;
-  width: 70%;
+  height: 100%;
+  width: 62%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,22 +94,25 @@ main .container {
 
 .containerDescribeAndPrice {
   display: flex;
-  width: 286px;
+  width: 100%;
   height: 34%;
   align-items: center;
   justify-content: center;
+  margin: 0 0 12px 0;
 }
 
 .describeAndPrice {
   display: flex;
   flex-direction: column;
-  width: 198px;
-  gap: 15px;
+  width: 62%;
+  height: 100%;
+  gap: 5px;
+  font-size: 1rem;
 }
 
 .txtDiscribe {
   height: 100%;
-  width: 100%;
+  width: 88%;
 }
 
 footer{
@@ -117,4 +122,248 @@ footer{
   background: white;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width:1279px) {
+
+  header {
+    display: flex;
+    height: 7%;
+    width: 100%;
+    background: white;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  header .title {
+    width: 28%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  header .menu {
+      display: flex;
+      width: 44%;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+  } 
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: #e1e1e1;
+  }
+
+  .sectionProducts {
+    height: 90%;
+    width: 81%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 5.3%;
+    padding: 25px 0 25px 0;
+  }
+
+  .sectionProducts .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 21%;
+    background-color: white;
+    border-radius: 0.25rem;
+    gap: 20px;
+  }
+
+  .containerImage .image {
+    height: 100%;
+    width: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 78%);
+    border-radius: 0.3125rem;
+  } 
+
+  .image img {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .describeAndPrice {
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    height: 100%;
+    gap: 12px;
+    font-size: 16px;
+  }
+
+  .txtDiscribe {
+    height: 100%;
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    height: 7%;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width:920px) {
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: #e1e1e1;
+  }
+
+  .sectionProducts .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    border-radius: 0.25rem;
+    gap: 20px;
+  }
+
+  .sectionProducts {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 5%;
+    padding: 25px 0 25px 0;
+  } 
+
+  .describeAndPrice {
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    height: 100%;
+    gap: 12px;
+    font-size: 16px;
+  } 
+
+  footer {
+    display: flex;
+    height: 7%;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width:768px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    gap: 7px;
+  }
+
+  header .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+  }
+
+  header .menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: #e1e1e1;
+  }
+
+  .sectionProducts {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 46px;
+    padding: 25px 0 25px 0;
+  }
+
+  .sectionProducts .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 44%;
+    background-color: white;
+    border-radius: 0.25rem;
+    gap: 20px;
+  }
+
+
+  footer {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+}
+
+@media (max-width:480px) {
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: #e1e1e1;
+  }
+
+  .sectionProducts {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 8%;
+    padding: 25px 0 25px 0;
+  }
+
+  .sectionProducts .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 46%;
+    background-color: white;
+    border-radius: 0.25rem;
+    gap: 20px;
+  }
 }
