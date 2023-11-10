@@ -6,8 +6,8 @@
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-body{
-  width: 100vw;
+body {
+  width: 100%;
   height: 100vh;
 }
 
@@ -40,13 +40,19 @@ header .menu {
 }
 
 main {
+  width: 100%;
   height: 100%;
-  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionProducts {
+  height: 90%;
+  width: 89%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  margin: 20px 0px 0px 0px;
-  flex-direction: row-reverse;
+  gap: 0px 63px;
 }
 
 main .container {
@@ -55,16 +61,53 @@ main .container {
   height: 45%;
   width: 17%;
   background-color: aqua;
+  justify-content: space-around;
+}
+
+.containerImage{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.image{
-  height: 60%;
+.image {
+  height: 95%;
   width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.image img{
+.image img {
+  width: 90%;
+  height: 85%;
+  object-fit: contain;
+}
+
+.containerDescribeAndPrice {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  height: 15%;
+}
+
+.describeAndPrice {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.txtDiscribe {
+  height: 47%;
+}
+
+footer{
+  display: flex;
+  height: 6%;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background: gray;
+  justify-content: center;
+  align-items: center;
 }
