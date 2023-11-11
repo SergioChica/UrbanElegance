@@ -92,16 +92,15 @@ main {
   object-fit: contain;
 }
 
-.containerDescribeAndPrice {
+.containerAttributesProducts {
   display: flex;
   width: 100%;
   height: 34%;
   align-items: center;
   justify-content: center;
-  margin: 0 0 12px 0;
 }
 
-.describeAndPrice {
+.AttributesProducts {
   display: flex;
   flex-direction: column;
   width: 62%;
@@ -113,6 +112,31 @@ main {
 .txtDiscribe {
   height: 100%;
   width: 88%;
+}
+
+.containerButtonCarProducts {
+  right: 4%;
+  top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 12px 0;
+}
+
+.buttonCarProducts {
+  width: 62%;
+}
+
+button.buttonProducts {
+  width: 77%;
+  height: 36px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  gap: 3px;
 }
 
 footer{
@@ -195,7 +219,7 @@ footer{
     object-fit: contain;
   }
   
-  .describeAndPrice {
+  .AttributesProducts {
     display: flex;
     flex-direction: column;
     width: 78%;
@@ -207,6 +231,21 @@ footer{
   .txtDiscribe {
     height: 100%;
     width: 100%;
+  }
+
+  .buttonCarProducts {
+    width: 78%;
+  }
+
+  button.buttonProducts {
+    width: 92%;
+    height: 36px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    gap: 5px;
   }
 
   footer {
@@ -249,7 +288,7 @@ footer{
     padding: 25px 0 25px 0;
   } 
 
-  .describeAndPrice {
+  .AttributesProducts {
     display: flex;
     flex-direction: column;
     width: 78%;
@@ -257,6 +296,21 @@ footer{
     gap: 12px;
     font-size: 16px;
   } 
+
+  .buttonCarProducts {
+    width: 78%;
+  }
+
+  button.buttonProducts {
+    width: 80%;
+    height: 36px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    gap: 5px;
+  }
 
   footer {
     display: flex;
@@ -325,6 +379,20 @@ footer{
     gap: 20px;
   }
 
+  .buttonCarProducts {
+    width: 78%;
+  }
+
+  button.buttonProducts {
+    width: 90%;
+    height: 36px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    gap: 7px;
+  } 
 
   footer {
     display: flex;
@@ -366,4 +434,19 @@ footer{
     border-radius: 0.25rem;
     gap: 20px;
   }
+
+  .buttonCarProducts {
+    width: 78%;
+  }
+
+  button.buttonProducts {
+    width: 100%;
+    height: 33px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    gap: 3px;
+}
 }
