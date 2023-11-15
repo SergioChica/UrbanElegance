@@ -10,44 +10,76 @@
 </head>
 <body> 
   <header>
-    <div class="title">
-      <h2>Urban Elegance</h2>
-    </div>
-    <div class="menu">
-      <p>Inicio</p>
-      <p>Catalogo</p>
+    <div class="containerHeader">
+      <div class="title">
+        <h2>Urban Elegance</h2>
+      </div>
+      <div class="menu">
+        <p>Inicio</p>
+        <p>Catalogo</p>
+      </div>
+      <div class="car">
+        <div class="containerCar">
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <div class="containerListCar">
+            <div class="containerProductCar">
+              <div class="ImageCar">
+                <img src="assets/images/sudadera1.png" alt="Monitor">
+              </div>
+              <div class="attributesProductsCar">
+                <h3 class="txtNameCar">
+                  Sudadera Chicago bulls
+                </h3>
+                <p class="txtPriceCar">
+                  $90.000 COL
+                </p>
+              </div>
+              <div class="buttonsCar">
+                <button class="buttonBuy">Comprar <span class="material-symbols-outlined">
+                  mark_email_read
+                  </span></button>
+                <button class="buttonDelete">Eliminar<span class="material-symbols-outlined">delete</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <main>
-    <div class="containerFiltres">
-      <h3>Filtros</h3>
-      <ul class="ulFiltres">
-        <li class="liFiltres">
-          <div class="txtFiltres">
-            <p>Por Defecto</p>
-          </div>
-          <div class="iconFiltres">
-            <span class="material-symbols-outlined check" id="check1"> done</span>
-          </div>
-        </li>
-        <li class="liFiltres">
-          <div class="txtFiltres">
-            <p>De mayor a menor</p>
-          </div>
-          <div class="iconFiltres">
-            <span class="material-symbols-outlined check"> done</span>
-          </div>
-        </li>
-        <li class="liFiltres">
-          <div class="txtFiltres">
-            <p>De menor a mayor</p>
-          </div>
-          <div class="iconFiltres">
-            <span class="material-symbols-outlined check"> done</span>
-          </div>
-        </li>
-      </ul>
-    </div>
+    <section class="sectionFiltres">
+      <div class="containerFiltres">
+        <h3 class="titleFiltres">Filtros</h3>
+        <div class="containerListFiltres">
+          <ul class="ulFiltres">
+            <li class="liFiltres">
+              <div class="txtFiltres">
+                <p>Por Defecto</p>
+              </div>
+              <div class="iconFiltres">
+                <span class="material-symbols-outlined check" id="check1"> done</span>
+              </div>
+            </li>
+            <li class="liFiltres">
+              <div class="txtFiltres">
+                <p>De mayor a menor</p>
+              </div>
+              <div class="iconFiltres">
+                <span class="material-symbols-outlined check"> done</span>
+              </div>
+            </li>
+            <li class="liFiltres">
+              <div class="txtFiltres">
+                <p>De menor a mayor</p>
+              </div>
+              <div class="iconFiltres">
+                <span class="material-symbols-outlined check"> done</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="sectionProducts">
       <div class="container">
         <div class="containerImage">
