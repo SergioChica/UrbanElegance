@@ -20,14 +20,6 @@ header {
   align-items: center;
 }
 
-header {
-  height: 6%;
-  width: 100%;
-  background: white;
-  display: flex;
-  justify-content: center;
-}
-
 .containerHeader {
   width: 91%;
   display: flex;
@@ -341,41 +333,46 @@ footer{
 
 @media (max-width:1279px) {
 
-  header {
+  .containerHeader {
+    width: 91%;
     display: flex;
-    height: 7%;
-    width: 100%;
-    background: white;
-    justify-content: space-evenly;
     align-items: center;
-    font-size: 15px;
   }
-
-  header .title {
-    width: 28%;
+  
+  .containerHeader .title {
+    width: 100%;
     display: flex;
-    flex-direction: row-reverse;
   }
-
-  header .menu {
-      display: flex;
-      width: 44%;
-      justify-content: start;
-      align-items: center;
-      gap: 10px;
-      font-size: 16px;
-  } 
+  
+  .containerHeader .menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+  }
+  
+  .car {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+  }
+  
+  .menu p{
+    cursor: pointer;
+  }
 
   main {
     width: 100%;
     min-height: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     background: #e1e1e1;
-  }
+    gap: 2%;
+}
 
   .sectionFiltres {
     padding: 25px 0 15px 0;
@@ -383,29 +380,19 @@ footer{
     width: 87%;
   }
 
-  .containerFiltres {
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    gap: 13px;
-    width: 20%;
-  }
-
-  .containerFiltres:hover .containerListFiltres{
-    display: block;
-  }
-  
-  .containerListFiltres {
-    display: none;
+  .sectionFiltres {
+    padding: 25px 0 0 0;
+    height: 30%;
+    width: 12%;
   }
 
   .sectionProducts {
     height: 90%;
-    width: 87%;
+    width: 77%;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px 5.3%;
-    padding: 0 0 25px 0;
+    gap: 20px 4%;
+    padding: 25px 0 25px 0;
   }
 
   .sectionProducts .container {
@@ -420,16 +407,16 @@ footer{
 
   .containerImage .image {
     height: 100%;
-    width: 78%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 78%);
     border-radius: 0.3125rem;
-  } 
+  }
 
   .image img {
-    width: 90%;
+    width: 72%;
     height: 100%;
     object-fit: contain;
   }
@@ -437,7 +424,7 @@ footer{
   .AttributesProducts {
     display: flex;
     flex-direction: column;
-    width: 78%;
+    width: 80%;
     height: 100%;
     gap: 12px;
     font-size: 16px;
@@ -475,36 +462,41 @@ footer{
 
 @media (max-width:920px) {
 
+  header {
+    height: 8%;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerHeader {
+    width: 78%;
+    display: flex;
+    align-items: center;
+  }
+
   main {
     width: 100%;
     min-height: 100%;
     height: auto;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background: #e1e1e1;
-  }
-  
-  .sectionFiltres{
-    padding: 25px 0 15px 0;
-    height: 30%;
-    width: 80%;
+    gap: 2%;
   }
 
-  .containerFiltres {
+  .sectionProducts {
+    order: 2;
+    height: 90%;
+    width: 78%;
     display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    gap: 13px;
-    width: 20%;
-  }
-
-  .containerFiltres:hover .containerListFiltres{
-    display: block;
-  }
-  
-  .containerListFiltres {
-    display: none;
+    flex-wrap: wrap;
+    gap: 20px 5%;
+    padding: 25px 0 25px 0;
   }
   
   .sectionProducts .container {
@@ -517,23 +509,30 @@ footer{
     gap: 20px;
   }
 
-  .sectionProducts {
-    height: 90%;
+  .containerImage .image {
+    height: 100%;
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px 5%;
-    padding: 0 0 25px 0;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 78%);
+    border-radius: 0.3125rem;
+  }
+
+  .image img {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .AttributesProducts {
     display: flex;
     flex-direction: column;
-    width: 78%;
+    width: 80%;
     height: 100%;
     gap: 12px;
-    font-size: 16px;
-  } 
+    font-size: 17px;
+  }
 
   .buttonCarProducts {
     width: 78%;
@@ -548,6 +547,28 @@ footer{
     justify-content: center;
     font-size: 16px;
     gap: 5px;
+  }
+  
+  .sectionFiltres {
+    order: 1;
+    padding: 25px 0 0 0;
+    height: 30%;
+    width: 78%;
+  }
+
+  .containerFiltres {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 30%;
+}
+  
+  .containerListFiltres {
+    display: none;
+  }
+
+  .containerFiltres:hover .containerListFiltres{
+    display: block;
   }
 
   footer {
@@ -574,20 +595,33 @@ footer{
     gap: 10px;
   }
 
-  header .title {
+  .containerHeader .title {
     width: 100%;
     display: flex;
-    justify-content: center;
-    font-size: 16px;
+    justify-content: start;
+    font-size: 14px;
   }
 
-  header .menu {
+  .containerHeader .menu {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+    font-size: 17px;
+  }
+
+  .containerNumberCar {
+    height: 100%;
+    background: rgb(225, 225, 225);
     font-size: 20px;
+    border-radius: 40px;
+    text-align: center;
+    min-width: 12%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   main {
@@ -595,17 +629,60 @@ footer{
     min-height: 100%;
     height: auto;
     display: flex;
-    align-items: center;
     justify-content: center;
     background: #e1e1e1;
+    gap: 2%;
+  }
+
+  .sectionProducts {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 46px;
+    padding: 25px 0 25px 0;
+  }
+
+  .sectionProducts .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 44%;
+    background-color: white;
+    border-radius: 0.25rem;
+    gap: 20px;
+  }
+  
+  .containerImage .image {
+    height: 100%;
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 78%);
+    border-radius: 0.3125rem;
+  }
+
+  .image img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .AttributesProducts {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    height: 100%;
+    gap: 12px;
+    font-size: 18px;  
   }
 
   .containerFiltres {
     display: flex;
     flex-direction: column;
-    align-items: self-start;
     gap: 13px;
-    width: 33%;
+    width: 44%;
   }
 
   .titleFiltres {
@@ -618,29 +695,10 @@ footer{
     font-size: 18px;
   }
 
-  .sectionProducts {
-    height: 90%;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 46px;
-    padding: 0 0 25px 0;
-  }
-
-  .sectionProducts .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 44%;
-    background-color: white;
-    border-radius: 0.25rem;
-    gap: 20px;
-  }
-
   .buttonCarProducts {
     width: 78%;
   }
-
+  
   button.buttonProducts {
     width: 90%;
     height: 36px;
@@ -665,22 +723,52 @@ footer{
 
 @media (max-width:480px) {
 
+  .containerHeader {
+    width: 95%;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .containerHeader .title {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    font-size: 14px;
+  }
+
+  .containerHeader .menu {
+    orphans: 1;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+  }
+
+  .car {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+  }
+
   main {
     width: 100%;
     min-height: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
     background: #e1e1e1;
+    gap: 2%;
   }
   
   .containerFiltres {
     display: flex;
     flex-direction: column;
-    align-items: self-start;
     gap: 13px;
-    width: 45%;
   }
 
   .sectionProducts {
@@ -689,7 +777,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     gap: 20px 8%;
-    padding: 0 0 25px 0;
+    padding: 25px 0 25px 0;
   }
 
   .sectionProducts .container {
@@ -700,6 +788,15 @@ footer{
     background-color: white;
     border-radius: 0.25rem;
     gap: 20px;
+  }
+
+  .AttributesProducts {
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    height: 100%;
+    gap: 12px;
+    font-size: 16px;
   }
 
   .buttonCarProducts {
