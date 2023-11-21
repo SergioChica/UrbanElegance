@@ -22,6 +22,7 @@ header {
 
 .containerHeader {
   width: 91%;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -39,21 +40,49 @@ header {
 } 
 
 .containerHeader .menu {
+  position: relative;
   display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
   gap: 10px;
   font-size: 20px;
-}
-
-.menu a{
-  text-decoration: none;
-  color: black;
+  margin: 0px 0 0px 0;
 }
 
 .menu p{
   cursor: pointer;
+}
+
+.menuCatalog {
+  margin-top: 1px;
+  background: white;
+  width: 100%;
+  height: 100px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  border-radius: 4px;
+}
+
+.ulCatalog {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  height: 70%;
+}
+
+.liCatalog {
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu:hover .menuCatalog{
+  display: flex;
 }
 
 .car {
@@ -291,6 +320,14 @@ footer{
     gap: 10px;
     font-size: 20px;
   }
+
+  .ulCatalog {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 70%;
+    font-size: 18px;
+  }
   
   .car {
     width: 100%;
@@ -429,6 +466,27 @@ footer{
     align-items: center;
     gap: 10px;
     font-size: 20px;
+  }
+
+  .menuCatalog {
+    margin-top: 1px;
+    background: white;
+    width: 250px;
+    height: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    border-radius: 4px;
+  }
+
+  .ulCatalog {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 70%;
+    font-size: 18px;
   }
 
   main {
@@ -581,6 +639,27 @@ footer{
     font-size: 20px;
   }
 
+  .menuCatalog {
+    margin-top: 1px;
+    background: white;
+    width: 250px;
+    height: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    border-radius: 4px;
+  }
+
+  .ulCatalog {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 70%;
+    font-size: 18px;
+  }
+
   .containerNumberCar {
     height: 100%;
     background: rgb(225, 225, 225);
@@ -728,19 +807,40 @@ footer{
   }
 
   .containerHeader .menu {
-    orphans: 1;
+    position: static;
     display: flex;
+    flex-direction: row;
     width: 70%;
+    height: 100%;
     justify-content: start;
     align-items: center;
     gap: 10px;
     font-size: 17px;
   }
 
-  .menu a {
+  .menuCatalog {
+    z-index: 999999;
+    background: white;
+    width: 65%;
+    height: 100%;
     display: none;
-    text-decoration: none;
-    color: black;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 4px;
+  }
+
+  .ulCatalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    font-size: 28px;
   }
 
   .car {
