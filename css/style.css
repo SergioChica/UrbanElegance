@@ -69,6 +69,10 @@ header {
   border-radius: 4px;
 }
 
+.containerTitleCatalog{
+  display: none;
+}
+
 .ulCatalog {
   display: flex;
   justify-content: space-around;
@@ -321,6 +325,10 @@ footer{
     font-size: 20px;
   }
 
+  .containerTitleCatalog{
+    display: none;
+  }
+
   .ulCatalog {
     display: flex;
     justify-content: space-around;
@@ -479,6 +487,10 @@ footer{
     position: absolute;
     top: 100%;
     border-radius: 4px;
+  }
+
+  .containerTitleCatalog{
+    display: none;
   }
 
   .ulCatalog {
@@ -650,6 +662,10 @@ footer{
     position: absolute;
     top: 100%;
     border-radius: 4px;
+  }
+
+  .containerTitleCatalog{
+    display: none;
   }
 
   .ulCatalog {
@@ -839,6 +855,10 @@ footer{
     bottom: 0;
     border-radius: 4px;
     box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+  }
+
+  .containerTitleCatalog{
+    display: block;
   }
 
   .titleCatalog {
