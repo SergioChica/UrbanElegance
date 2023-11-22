@@ -18,6 +18,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 }
 
 .containerHeader {
@@ -459,6 +460,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
   }
 
   .containerHeader {
@@ -584,7 +586,7 @@ footer{
     background: white;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
+    font-size: 20px;
     gap: 10px;
   }
 
