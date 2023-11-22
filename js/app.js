@@ -1,29 +1,33 @@
-const buttonMenu = document.querySelector('#catalog');
+const iconMenu = document.querySelector('#catalog');
+const containerMenu = document.querySelector('#menu');
 
 function convertMenu() {
   if (window.innerWidth <= 480 ) {
-    buttonMenu.innerHTML = '<span class="material-symbols-outlined">menu</span>';
+    iconMenu.innerHTML = '<span class="material-symbols-outlined" id="buttonMenu">menu</span>';
+    containerMenu.className='menuPhone';
   }else{
-    buttonMenu.textContent = 'Catalogo';
+    iconMenu.textContent = 'Catalogo';
   }
 }
 
 window.addEventListener("load", convertMenu);
 window.addEventListener("resize", convertMenu);
 
-const menu = document.querySelector('#menuCatalog')
-const body = document.body;
 
-window.addEventListener('load', function () {
+window.addEventListener("load", function () {
   
-  buttonMenu.addEventListener('click', openMenu);
+  const buttonMenu = document.querySelector("#buttonMenu");
+  const menu = document.querySelector('#menuCatalog')
+  const body = document.body;
 
+  buttonMenu.addEventListener('click', openMenu);
+  
   function openMenu() {
-    if (menu.style.display =='none') {
+    if (getComputedStyle(menu).display ==='none') {
       menu.style.display='flex';
       body.style.overflow='hidden';
     }else{
-      menu.style.display='none';
+      menu.syle.display='none';
     }
   }
 
@@ -32,8 +36,8 @@ window.addEventListener('load', function () {
   function closeMenu(event) {
     if (!menu.contains(event.target) && event.target !== buttonMenu) {
       menu.style.display= 'none';
-      body.style.overflow='scroll';
+      body.style.overflow='auto';
     }
   }
 
-}) 
+});

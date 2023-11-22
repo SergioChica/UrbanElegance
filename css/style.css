@@ -792,10 +792,6 @@ footer{
 
 @media (max-width:480px) {
 
-  body.scrollLock {
-    overflow: hidden;
-  }
-
   .containerHeader {
     width: 90%;
     display: flex;
@@ -810,7 +806,7 @@ footer{
     font-size: 18px;
   }
 
-  .containerHeader .menu {
+  .containerHeader .menuPhone {
     position: static;
     display: flex;
     flex-direction: row;
@@ -822,12 +818,19 @@ footer{
     font-size: 17px;
   }
 
+  .menuPhone p{
+    width: 24px;
+    height: 24px;
+  }
+
   .menuCatalog {
+    margin-top: 0;
     z-index: 999999;
     background: white;
-    width: 65%;
+    width: 68%;
     height: 100%;
     display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -835,7 +838,11 @@ footer{
     left: 0;
     bottom: 0;
     border-radius: 4px;
-    transition: 2s linear;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+  }
+
+  .titleCatalog {
+    font-size: 28px;
   }
 
   .ulCatalog {
