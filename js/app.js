@@ -22,18 +22,21 @@ function actionsMenu() {
     const buttonMenu = document.querySelector("#buttonMenu");
     const menu = document.querySelector('#menuCatalog')
     const body = document.body;
-  
-    //Event to open the menu.
-    buttonMenu.addEventListener('click', openMenu);
-    
-    //Function to open menu.
-    function openMenu() {
+    if (window.innerWidth <= 480) {
+      
+      //Event to open the menu.
+      buttonMenu.addEventListener('click', openMenu);
+      
+      //Function to open menu.
+      function openMenu(event) {
+      //We stop the propagation of the event
+      event.stopPropagation();
       //If menu has a display in none we give a display flex to make visible the menu and we apply an overflow hidden to the body to remove the scroll to the page, if not we leave in display none and we do not remove scroll of the page.
       if (getComputedStyle(menu).display ==='none') {
         menu.style.display='flex';
         body.style.overflow='hidden';
       }else{
-        menu.syle.display='none';
+        menu.style.display='none';
       }
     }
     
@@ -49,6 +52,9 @@ function actionsMenu() {
       }
     }
   }
+}
 
 //Activate when the window is loads.
 window.addEventListener("load", actionsMenu) 
+//Activate when the window size is changed.
+window.addEventListener("resize", actionsMenu)
