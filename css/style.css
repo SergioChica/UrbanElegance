@@ -218,7 +218,7 @@ span.check {
   align-items: center;
   background: rgb(175 175 175 / 45%);
   box-shadow: 0 0 190px black inset;
-  z-index: 9999999999999;
+  z-index: 10;
   position: absolute;
 }
 
@@ -388,7 +388,6 @@ footer{
   }
 
   .titleFiltres {
-    cursor: pointer;
     font-size: 24px;
   }
 
@@ -606,7 +605,6 @@ footer{
   }
 
   .titleFiltres {
-    cursor: pointer;
     font-size: 24px;
   }
 
@@ -791,7 +789,6 @@ footer{
   }
 
   .titleFiltres {
-    cursor: pointer;
     font-size: 21px;
   }
 

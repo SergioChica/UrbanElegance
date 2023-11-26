@@ -58,3 +58,45 @@ function actionsMenu() {
 window.addEventListener("load", actionsMenu) 
 //Activate when the window size is changed.
 window.addEventListener("resize", actionsMenu)
+
+
+const containerNumberCar = document.querySelector("#containerNumberCar");
+const numberCar = document.querySelector("#numberCar");
+const buttonProducts = document.querySelector("#buttonProducts");
+const buttonDelete = document.querySelector("#buttonDelete");
+
+document.addEventListener("DOMContentLoaded", displayNumber);
+
+buttonProducts.addEventListener("click", increase)
+
+function increase() {
+  let currentValue = parseInt(numberCar.innerHTML);
+
+  currentValue++
+
+  numberCar.innerText = currentValue;
+  displayNumber()
+}
+
+buttonDelete.addEventListener("click", decrease);
+
+function decrease() {
+  let currentValue = parseInt(numberCar.innerHTML);
+
+  if (currentValue > 0) {
+    currentValue--
+  }
+
+  numberCar.innerText = currentValue;
+  displayNumber()
+}
+
+function displayNumber() {
+  let currentValue = parseInt(numberCar.innerHTML);
+
+  if (currentValue > 0) {
+    containerNumberCar.style.display = "block";
+  } else {
+    containerNumberCar.style.display = "none";
+  }
+}
