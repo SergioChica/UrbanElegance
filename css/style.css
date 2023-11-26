@@ -7,10 +7,10 @@
 } 
 
 body {
-  width: 100%;
+  width: 100%; 
   height: 100vh;
 }
-
+ 
 header {
   height: 8%;
   width: 100%;
@@ -201,13 +201,31 @@ span.check {
   padding: 25px 0 25px 0;
 }
 
-.sectionProducts .container {
+.sectionProducts .containerProducts {
   display: flex;
   flex-direction: column;
   width: 22%;
   background-color: white;
   border-radius: 0.25rem;
   gap: 20px;
+  position: relative;
+}
+
+.soldOut {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(175 175 175 / 45%);
+  box-shadow: 0 0 190px black inset;
+  z-index: 9999999999999;
+  position: absolute;
+}
+
+.imageSoldOut {
+  width: 90%;
+  height: 50%;
+  filter: drop-shadow(0 0 17px red);
 }
 
 .containerImage {
@@ -277,6 +295,10 @@ span.check {
   justify-content: center;
   align-items: center;
   margin: 0 0 12px 0;
+}
+
+.buttonCarProducts {
+  width: 80%;
 }
 
 .buttonProducts {
@@ -386,7 +408,7 @@ footer{
     padding: 25px 0 25px 0;
   }
 
-  .sectionProducts .container {
+  .sectionProducts .containerProducts {
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -524,7 +546,7 @@ footer{
     padding: 25px 0 25px 0;
   }
   
-  .sectionProducts .container {
+  .sectionProducts .containerProducts {
     display: flex;
     flex-direction: column;
     width: 47%;
@@ -713,7 +735,7 @@ footer{
     padding: 25px 0 25px 0;
   }
 
-  .sectionProducts .container {
+  .sectionProducts .containerProducts {
     display: flex;
     flex-direction: column;
     width: 48%;
@@ -910,7 +932,7 @@ footer{
     padding: 25px 0 25px 0;
   }
 
-  .sectionProducts .container {
+  .sectionProducts .containerProducts {
     display: flex;
     flex-direction: column;
     width: 48%;
@@ -918,6 +940,12 @@ footer{
     border-radius: 0.25rem;
     gap: 20px;
   }
+
+  .imageSoldOut {
+    width: 100%;
+    height: 35%;
+    filter: drop-shadow(0 0 17px red);
+}
 
   .AttributesProducts {
     display: flex;
