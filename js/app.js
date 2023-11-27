@@ -73,25 +73,35 @@ function increase() {
   let currentValue = parseInt(numberCar.innerHTML);
 
   currentValue++
+  
+  valueNumberCar = currentValue
 
-  numberCar.innerText = currentValue;
+  localStorage.setItem("keyNumberCar", valueNumberCar);
+
+  numberCar.innerText = localStorage.getItem("keyNumberCar");
   displayNumber()
 }
 
-buttonDelete.addEventListener("click", decrease);
+buttonDelete.addEventListener("click", decrease)
 
 function decrease() {
   let currentValue = parseInt(numberCar.innerHTML);
-
+  
   if (currentValue > 0) {
     currentValue--
   }
+    
+  valueNumberCar = currentValue
 
-  numberCar.innerText = currentValue;
+  localStorage.setItem("keyNumberCar", valueNumberCar);
+
+  numberCar.innerText = localStorage.getItem("keyNumberCar");
   displayNumber()
 }
 
 function displayNumber() {
+  numberCar.innerHTML = localStorage.getItem("keyNumberCar")
+
   let currentValue = parseInt(numberCar.innerHTML);
 
   if (currentValue > 0) {
@@ -99,4 +109,5 @@ function displayNumber() {
   } else {
     containerNumberCar.style.display = "none";
   }
+  
 }
