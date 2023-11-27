@@ -255,8 +255,10 @@ main {
 .buttonDelete {
   color: gray;
   font-size: 22px;
+  border: none;
   border-bottom: gray solid 1px;
   cursor: pointer;
+  background: none;
 }
 
 .buttonDelete:hover{
@@ -718,9 +720,11 @@ footer{
   .buttonDelete {
     color: gray;
     font-size: 16px;
+    border: none;
     border-bottom: gray solid 1px;
     cursor: pointer;
-  }
+    background: none;
+}
 
   .txtPrice {
     width: 100%;
@@ -916,9 +920,11 @@ footer{
   .buttonDelete {
     color: gray;
     font-size: 18px;
+    border: none;
     border-bottom: gray solid 1px;
     cursor: pointer;
-  }
+    background: none;
+}
 
   .txtPrice {
     width: 100%;
