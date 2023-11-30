@@ -53,6 +53,17 @@ header {
   margin: 0px 0 0px 0;
 }
 
+.txtMenu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.linkCreateProducts {
+  text-decoration: none;
+  color: black;
+}
+
 .menu p{
   cursor: pointer;
 }
@@ -138,6 +149,30 @@ main {
   padding: 25px 0 0 0;
   height: 30%;
   width: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputSearch {
+  width: 90%;
+  text-indent: 5px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.iconSearch{
+  cursor: pointer;
+}
+
+.containerSearch {
+  display: flex;
+  background: white;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .containerFiltres {
@@ -147,7 +182,6 @@ main {
 }
 
 .titleFiltres {
-  cursor: pointer;
   font-size: 24px;
 }
 
@@ -330,7 +364,7 @@ footer{
 @media (max-width:1279px) {
 
   .containerHeader {
-    width: 91%;
+    width: 95%;
     display: flex;
     align-items: center;
   }
@@ -385,8 +419,8 @@ footer{
   .sectionFiltres {
     padding: 25px 0 0 0;
     height: 30%;
-    width: 12%;
-  }
+    width: 16%;
+}
 
   .titleFiltres {
     font-size: 24px;
@@ -489,6 +523,13 @@ footer{
     display: flex;
     align-items: center;
   }
+
+  .car {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
 
   .containerHeader .menu {
     display: flex;
@@ -671,6 +712,13 @@ footer{
     align-items: center;
     gap: 10px;
     font-size: 20px;
+  }
+
+  .car {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
   }
 
   .menuCatalog {
@@ -856,11 +904,17 @@ footer{
     font-size: 17px;
   }
 
+  .linkCreateProducts {
+    display: none;
+    text-decoration: none;
+    color: black;
+  }
+
   .menuPhone p{
     width: 24px;
     height: 24px;
   }
-
+  
   .menuCatalog {
     margin-top: 0;
     z-index: 999999;
@@ -878,6 +932,14 @@ footer{
     border-radius: 4px;
     box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
   }
+  
+    .containerLinkCreateProducts {
+      margin-bottom: 40px;
+    }
+  
+    .linkCreateProductsMenu {
+      font-size: 28px;
+  }
 
   .containerTitleCatalog{
     display: block;
@@ -890,12 +952,12 @@ footer{
   .ulCatalog {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 90%;
-    height: 70%;
-    font-size: 28px;
-  }
+    height: 60%;
+    font-size: 25px;
+}
 
   .car {
     order: 3;
