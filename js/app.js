@@ -59,48 +59,59 @@ window.addEventListener("load", actionsMenu)
 //Activate when the window size is changed.
 window.addEventListener("resize", actionsMenu)
 
-
 const containerNumberCar = document.querySelector("#containerNumberCar");
 const numberCar = document.querySelector("#numberCar");
-const buttonProducts = document.querySelector("#buttonProducts");
-const buttonDelete = document.querySelector("#buttonDelete");
 
 document.addEventListener("DOMContentLoaded", displayNumber);
 
-buttonProducts.addEventListener("click", increase)
-
-function increase() {
-  let currentValue = parseInt(numberCar.innerHTML);
-
-  currentValue++
+document.addEventListener("DOMContentLoaded", () =>{
   
-  valueNumberCar = currentValue
-
-  localStorage.setItem("keyNumberCar", valueNumberCar);
-
-  numberCar.innerText = localStorage.getItem("keyNumberCar");
-  displayNumber()
-}
-
-buttonDelete.addEventListener("click", decrease)
-
-function decrease() {
-  let currentValue = parseInt(numberCar.innerHTML);
+  const buttonProducts = document.querySelector("#buttonProducts");
+  buttonProducts.addEventListener("click", increase)
   
-  if (currentValue > 0) {
-    currentValue--
-  }
+  function increase() {
+    let currentValue = parseInt(numberCar.innerHTML);
     
-  valueNumberCar = currentValue
+    currentValue++
+    
+    valueNumberCar = currentValue
+    
+    localStorage.setItem("keyNumberCar", valueNumberCar);
+    
+    numberCar.innerText = localStorage.getItem("keyNumberCar");
+    displayNumber()
+  }
+})
 
-  localStorage.setItem("keyNumberCar", valueNumberCar);
+document.addEventListener("DOMContentLoaded", () => {
+    
+  const buttonDelete = document.querySelector("#buttonDelete");
+  buttonDelete.addEventListener("click", decrease)
 
-  numberCar.innerText = localStorage.getItem("keyNumberCar");
-  displayNumber()
-}
+  function decrease() {
+    let currentValue = parseInt(numberCar.innerHTML);
+    
+    if (currentValue > 0) {
+      currentValue--
+    }
+      
+    valueNumberCar = currentValue
+
+    localStorage.setItem("keyNumberCar", valueNumberCar);
+
+    numberCar.innerText = localStorage.getItem("keyNumberCar");
+    displayNumber()
+  }
+
+})
 
 function displayNumber() {
-  numberCar.innerHTML = localStorage.getItem("keyNumberCar")
+  if (localStorage.getItem("keyNumberCar") != "NaN") {
+    numberCar.innerHTML = localStorage.getItem("keyNumberCar")
+  }else{
+    localStorage.setItem("keyNumberCar", 0);
+    numberCar.innerHTML = localStorage.getItem("keyNumberCar")
+  }
 
   let currentValue = parseInt(numberCar.innerHTML);
 
