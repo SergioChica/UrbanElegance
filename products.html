@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title> 
+  <link rel="stylesheet" href="css/styleProduct.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</head>
+<body>   
+  <header>
+    <div class="containerHeader">
+      <div class="title">
+        <a href="index.html"><h2>Urban Elegance</h2></a>
+      </div>
+      <div class="menu" id="menu">
+        <div class="txtMenu">
+          <p id="catalog">Catalogo</p>
+          <a href="products.html" class="linkCreateProducts">Productos</a>
+        </div>
+        <div class="menuCatalog" id="menuCatalog">
+          <div class="containerLinkCreateProducts"><h3 class="linkCreateProductsMenu"><a href="products.html">Productos</a></h3></div>
+          <div class="containerTitleCatalog"><h3 class="titleCatalog">Catalogo</h3></div>
+          <ul class="ulCatalog">
+            <li class="liCatalog">Camiseta</li>
+            <li class="liCatalog">Pantalon</li>
+            <li class="liCatalog">Zapato</li>
+            <li class="liCatalog">Accesorios</li>
+          </ul>
+        </div>
+      </div>
+      <div class="car">
+        <a href="car.html"><span class="material-symbols-outlined iconCar">shopping_cart</span></a>
+        <div class="containerNumberCar" id="containerNumberCar">
+          <p id="numberCar">0</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="sectionForm">
+        <div class="containerForm">
+            <form action="form" class="form">
+                <h3 class="titleCreateProducts">Crear Producto</h3>
+                <div class="containerInputForm">
+                    <label for="inputTitle">Titulo</label>
+                    <input type="text" class="inputForm" id="inputTitle">
+                </div>
+                <div class="containerInputForm">
+                    <label for="inputDescription">Descripcion</label>
+                    <input type="text" class="inputForm" id="inputDescription">
+                </div>
+                <div class="containerInputForm">
+                    <label for="inputStock">Cantidad</label>
+                    <input type="number" class="inputForm" id="inputStock">
+                </div>
+                <div class="containerInputForm">
+                    <label for="inputPrice">Precio</label>
+                    <input type="number" class="inputForm" id="inputPrice">
+                </div>
+                <div class="containerInputForm">
+                    <label for="inputImage"></label>
+                    <input type="image" class="inputForm image" id="inputImage">
+                </div>
+                <button class="buttonForm">Crear</button>
+            </form>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <p>Urban Elegance&copy; 2023 nice</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
