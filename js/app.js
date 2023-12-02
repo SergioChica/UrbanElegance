@@ -122,3 +122,78 @@ function displayNumber() {
   }
   
 }
+
+// PART ADD PRODUCTS
+
+const productos = [
+
+    {
+      id: "pantaloneta1",
+      title: "Pantaloneta morada",
+      imagen: "../assets/images/pantaloneta1.png",
+      description: "La propia pa meterle al soccer",
+      precio:"90.000"
+    },
+
+    {
+      id: "pantaloneta1",
+      title: "Pantaloneta morada",
+      imagen: "../assets/images/pantaloneta1.png",
+      description: "La propia pa meterle al soccer",
+      precio:"90.000"
+    },
+
+    {
+      id: "esqueleto1",
+      title: "Esqueleto morada",
+      imagen: "../assets/images/esqueleto1.png",
+      description: "Comoda para salir a tomar el sol ademas de funcionar como buen equipamiento para basketboll",
+      precio:"90.000"
+    }
+
+]
+
+const sectionProducts = document.querySelector("#sectionProducts")
+
+function loadProducts() {
+  productos.forEach(producto => {
+      const div = document.createElement("div");
+      div.classList.add("containerProducts");
+      div.innerHTML = `
+      
+        <div class="soldOut">
+        <img src="assets/images/agotado.png" alt="Agotado" class="imageSoldOut">
+        </div>
+        <div class="containerImage">
+        <div class="image">
+        <img src="${producto.imagen}" alt="${producto.title}">
+        </div>
+      </div>
+      <div class="containerAttributesProducts">
+      <div class="AttributesProducts">
+      <h3 class="txtName">
+        ${producto.title}
+      </h3>
+      <p class="txtDiscribe">
+        ${producto.description}
+      </p>
+          <p class="txtStock">Stock 0</p>
+          <p class="txtPrice">${producto.precio}</p>
+          </div>
+          </div>
+          <div class="containerButtonCarProducts">
+          <div class="buttonCarProducts">
+          <button class="buttonProducts" >
+          Añadir al carrito
+          <ion-icon name="cart-outline"></ion-icon>
+          </button>
+          </div>
+          </div>
+        
+        `;
+
+        sectionProducts.append(div)
+  })
+}
+
+loadProducts();

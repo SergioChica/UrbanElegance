@@ -252,7 +252,7 @@ span.check {
 
 .soldOut {
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background: rgb(175 175 175 / 45%);
