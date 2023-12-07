@@ -41,8 +41,12 @@
   <main>
     <section class="sectionForm">
         <div class="containerForm">
-            <form action="form" class="form">
+            <form id="productForm" class="form">
                 <h3 class="titleCreateProducts">Crear Producto</h3>
+                <div class="containerInputForm">
+                  <label for="inputID">Id</label>
+                  <input type="text" class="inputForm" id="inputID">
+                </div>
                 <div class="containerInputForm">
                     <label for="inputTitle">Titulo</label>
                     <input type="text" class="inputForm" id="inputTitle">
@@ -59,18 +63,19 @@
                     <label for="inputPrice">Precio</label>
                     <input type="number" class="inputForm" id="inputPrice">
                 </div>
-                <div class="containerInputForm">
-                    <label for="inputImage"></label>
-                    <input type="image" class="inputForm image" id="inputImage">
+                <div class="containerInputFormImage">
+                    <label for="inputImage" class="inputFile">Seleccionar imagen:</label>
+                    <input type="file" class="inputForm image" id="inputImage" accept="image/*" placeholder="">
+                    <img id="previewImage" class="previewImage" src="#" alt="Vista previa de la imagen">
                 </div>
-                <button class="buttonForm">Crear</button>
-            </form>
+                <button type="button" class="buttonForm" id="buttonForm">Crear</button>
+              </form>
         </div>
     </section>
   </main>
   <footer>
     <p>Urban Elegance&copy; 2023 nice</p>
   </footer>
-  <script src="js/app.js"></script>
 </body>
+<script src="js/app.js"></script>
 </html>
