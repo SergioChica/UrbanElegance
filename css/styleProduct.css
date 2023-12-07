@@ -187,6 +187,11 @@ main {
     gap: 2px;
 }
 
+.containerInputFormImage{
+  display: flex;
+  gap: 3px;
+}
+
 label {
     font-size: 20px;
 }
@@ -201,10 +206,24 @@ label {
     font-size: 20px;
 }
 
-.image {
-    width: 40%;
-    height: auto;
-    min-height: 100%;
+.inputFile {
+  background: rgb(225, 225, 225);;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.image{
+  display: none;
+}
+
+.previewImage {
+  display: none;
+  width: 100px;
+  height: 100px;
 }
 
 .buttonForm {
@@ -215,6 +234,7 @@ label {
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 78%);
     font-size: 20px;
     color: white;
+    cursor: pointer;
 }
 
 footer{
