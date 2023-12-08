@@ -216,6 +216,12 @@ main {
   width: 100%;
 }
 
+.txtFiltres button {
+  border: none;
+  background: none;
+  font-size: 16px;
+}
+
 .iconFiltres {
   display: flex;
   justify-content: end;
@@ -277,6 +283,7 @@ span.check {
 
 .image {
   height: 100%;
+  min-height: 297px;
   width: 80%;
   display: flex;
   justify-content: center;

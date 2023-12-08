@@ -23,10 +23,11 @@
           <div class="containerLinkCreateProducts"><h3 class="linkCreateProductsMenu"><a href="products.html">Productos</a></h3></div>
           <div class="containerTitleCatalog"><h3 class="titleCatalog">Catalogo</h3></div>
           <ul class="ulCatalog">
-            <li class="liCatalog">Camiseta</li>
-            <li class="liCatalog">Pantalon</li>
-            <li class="liCatalog">Zapato</li>
-            <li class="liCatalog">Accesorios</li>
+            <li class="liCatalog" id="camisas">Camiseta</li>
+            <li class="liCatalog" id="pantalones">Pantalon</li>
+            <li class="liCatalog" id="tenis">Zapato</li>
+            <li class="liCatalog" id="busos">Busos</li>
+            <li class="liCatalog" id="gorras">Gorras</li>
           </ul>
         </div>
       </div>
@@ -40,7 +41,7 @@
   </header>
   <main>
     <section class="sectionProducts" id="sectionProducts">
-      <div class="containerProducts">
+      <!-- <div class="containerProducts">
         <div class="soldOut" id="soldOut">
           <img src="assets/images/agotado.png" alt="Agotado" class="imageSoldOut">
         </div>
@@ -69,39 +70,39 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <section class="sectionFiltres">
       <div class="containerSearch">
-        <input type="text" placeholder="Busca tu producto" class="inputSearch">
-        <span class="material-symbols-outlined iconSearch">search</span>
+        <input type="text" placeholder="Busca tu producto" class="inputSearch" id="inputSearch">
+        <span class="material-symbols-outlined iconSearch" id="buttonSearch">search</span>
       </div>
       <div class="containerFiltres">
         <h3 class="titleFiltres">Filtros</h3>
         <div class="containerListFiltres">
           <ul class="ulFiltres">
-            <li class="liFiltres">
+            <li class="liFiltres" id="forDefect">
               <div class="txtFiltres">
-                <p>Por Defecto</p>
+                <button>Por Defecto</button>
               </div>
               <div class="iconFiltres">
                 <span class="material-symbols-outlined check" id="check1"> done</span>
               </div>
             </li>
-            <li class="liFiltres">
+            <li class="liFiltres" id="forAscendend">
               <div class="txtFiltres">
-                <p>De mayor a menor</p>
+                <button >De mayor a menor</button>
               </div>
               <div class="iconFiltres">
-                <span class="material-symbols-outlined check"> done</span>
+                <span class="material-symbols-outlined check" id="check2"> done</span>
               </div>
             </li>
-            <li class="liFiltres">
+            <li class="liFiltres" id="forDescend">
               <div class="txtFiltres">
-                <p>De menor a mayor</p>
+                <button>De menor a mayor</button>
               </div>
               <div class="iconFiltres">
-                <span class="material-symbols-outlined check"> done</span>
+                <span class="material-symbols-outlined check" id="check3"> done</span>
               </div>
             </li>
           </ul>
